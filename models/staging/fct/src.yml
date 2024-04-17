@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: fct
+    database: hive_metastore
+    description: "All Fact Tables"
+
+    tables:
+      - name: averagecosts
+        # external:
+        #   location: "abfss://rawdata@gsynergydatalake.dfs.core.windows.net/rawdata/fact.averagecosts.dlm.gz"
+        #   file_format: 'textfile'  # or 'text' depending on Databricks conventions
+        #   compression: 'gzip'
+        #   options:
+        #     delimiter: '|'  # Specify the delimiter if needed
+        #   schema: |
+        #     create table (
+        #       fscldt_id STRING,
+        #       sku_id STRING,
+        #       average_unit_standardcost FLOAT,
+        #       average_unit_landedcost FLOAT
+        #     )
