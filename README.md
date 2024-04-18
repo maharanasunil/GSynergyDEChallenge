@@ -1,22 +1,16 @@
-# dbt + Databricks Demo!
+# Your dbt Project Name
 
-This is a modified version of our public [tutorial](https://docs.getdbt.com/tutorial/setting-up)
-intended for users of dbt on Databricks.
+Welcome to [Your dbt Project Name]! This project utilizes dbt (data build tool) to transform raw data into analytics-ready tables in your data warehouse. Below, you'll find information on how to set up and use this project effectively.
 
-Any questions? jeremy@fishtownanalytics.com
+## Project Structure
 
-## Sample data
+- **models**: Contains dbt models that define transformations on your raw data.
+- **tests**: Contains dbt tests to ensure data quality and integrity.
+- **analysis**: Contains SQL files for ad-hoc analysis and reporting.
+- **macros**: Contains reusable dbt macros for common tasks.
+- **snapshots**: Contains dbt snapshots for capturing point-in-time data.
 
-Create Databricks tables `jaffle_shop.orders`, `jaffle_shop.customers`,
-and `stripe.payments` from these CSV files, which are located in a public S3 bucket ([docs](https://docs.databricks.com/data/tables.html#create-a-table-using-the-ui)):
-
-```
-s3://dbt-tutorial-public/jaffle_shop_orders.csv
-s3://dbt-tutorial-public/jaffle_shop_customers.csv
-s3://dbt-tutorial-public/stripe_payments.csv
-```
-
-## Getting started
+## Setup Instructions
 
 The instructions below assume you are running dbt on macOS. Linux and Windows 
 users should adjust the bash commands accordingly.
@@ -39,11 +33,3 @@ $ dbt debug
 ```
 $ dbt run
 ```
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
-- Watch our [Office Hours](https://www.youtube.com/watch?v=C9WgnKEnwmg) on dbt + Spark
