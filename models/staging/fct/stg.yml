@@ -7,9 +7,5 @@ models:
     #     tests:
     #       - unique
     #       - not_null
+
   - name: stg_fact_transactions
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null

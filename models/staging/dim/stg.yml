@@ -2,50 +2,22 @@ version: 2
 
 models:
   - name: stg_dim_clnd
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
+    columns:
+      - name: fscldt_id
+        tests:
+          - unique
+          - not_null
+
   - name: stg_dim_hldy
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
+
   - name: stg_dim_invloc
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
+
   - name: stg_dim_invstatus
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
+
   - name: stg_dim_possite
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
+
   - name: stg_dim_pricestate
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
+
   - name: stg_dim_prod
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
+
   - name: stg_dim_rtlloc
-    # columns:
-    #   - name: customer_id
-    #     tests:
-    #       - unique
-    #       - not_null
