@@ -19,6 +19,8 @@ clean-targets:
 models:
   gsynergy_challenge:
       staging:
-          materialized: view  
+          schema: staging
+          materialized: view
+          tags: ["staging"]  
       marts:
           materialized: table  

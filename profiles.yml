@@ -1,0 +1,20 @@
+# ~/.dbt/profiles.yml
+
+# ~/.dbt/profiles.yml
+
+gsynergy_challenge:
+  outputs:
+    dev:
+      type: databricks
+      method: http
+      schema: dbt
+      host: "{{ env_var('DBT_DATABRICKS_HOST') }}"
+      http_path: sql/protocolv1/o/4481388049102533/0417-130604-kk8krl5p
+      port: 443
+      organization: "{{ env_var('DBT_DATABRICKS_ORG') }}"
+      token: "{{ env_var('DBT_DATABRICKS_TOKEN') }}"
+      cluster: "{{ env_var('DBT_DATABRICKS_CLUSTER') }}"
+      connect_timeout: 30
+      connect_retries: 15
+      threads: 4
+  target: dev
