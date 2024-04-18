@@ -26,7 +26,7 @@ GROUP BY
 SELECT 
     pos_site_id,
     sku_id,
-    fsclwk_id,
+    fscldt_id,
     price_substate_id,
     type,
     total_sales_units,
