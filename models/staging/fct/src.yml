@@ -7,6 +7,8 @@ sources:
 
     tables:
       - name: averagecosts
+      - name: transactions
+
         # external:
         #   location: "abfss://rawdata@gsynergydatalake.dfs.core.windows.net/rawdata/fact.averagecosts.dlm.gz"
         #   file_format: 'textfile'  # or 'text' depending on Databricks conventions
