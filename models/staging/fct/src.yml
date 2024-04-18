@@ -8,20 +8,6 @@ sources:
     tables:
       - name: averagecosts
       - name: transactions
-  
-  - name: dim
-    database: hive_metastore
-    description: "All Dimension Tables"
-
-    tables:
-      - name: clnd
-      - name: hldy
-      - name: invloc
-      - name: invstatus
-      - name: possite
-      - name: pricestate
-      - name: prod
-      - name: rtlloc
 
         # external:
         #   location: "abfss://rawdata@gsynergydatalake.dfs.core.windows.net/rawdata/fact.averagecosts.dlm.gz"
