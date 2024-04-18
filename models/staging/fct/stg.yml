@@ -2,10 +2,16 @@ version: 2
 
 models:
   - name: stg_fact_average_costs
+    columns:
+      - name: fscldt_id
+        tests:
+          - relationships:
+              to: ref('stg_dim_clnd')
+              field: fscldt_id
+
+  - name: stg_fact_transactions
     # columns:
-    #   - name: customer_id
+    #   - name: 
     #     tests:
     #       - unique
     #       - not_null
-
-  - name: stg_fact_transactions

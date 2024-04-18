@@ -1,25 +1,26 @@
 {{ config(
-  materialized='table'
+  materialized='table',
+  schema='core'
 ) }}
 
 WITH CTE AS(
   SELECT
     pos_site_id,
     sku_id,
-    fsclwk_id,
+    fscldt_id,
     price_substate_id,
     type,
     SUM(sales_units) AS total_sales_units,
     SUM(sales_dollars) AS total_sales_dollars,
     SUM(discount_dollars) AS total_discount_dollars
 FROM
-    {{ ref('stg_transactions') }}
+    {{ ref('stg_fact_transactions') }}
 GROUP BY
     pos_site_id,
     sku_id,
-    fsclwk_id,
+    fscldt_id,
     price_substate_id,
-    type;
+    type
 )
 
 SELECT 
