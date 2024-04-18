@@ -1,6 +1,5 @@
 {{ config(
-  materialized='table',
-  schema='core'
+  materialized='table'
 ) }}
 
 WITH CTE AS(
