@@ -24,9 +24,9 @@ GROUP BY
 )
 
 SELECT 
+    fscldt_id,
     pos_site_id,
     sku_id,
-    fscldt_id,
     price_substate_id,
     type,
     total_sales_units,

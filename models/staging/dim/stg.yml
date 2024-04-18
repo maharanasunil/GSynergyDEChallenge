@@ -7,17 +7,3 @@ models:
         tests:
           - unique
           - not_null
-
-  - name: stg_dim_hldy
-
-  - name: stg_dim_invloc
-
-  - name: stg_dim_invstatus
-
-  - name: stg_dim_possite
-
-  - name: stg_dim_pricestate
-
-  - name: stg_dim_prod
-
-  - name: stg_dim_rtlloc

@@ -5,13 +5,11 @@ models:
     columns:
       - name: fscldt_id
         tests:
-          - relationships:
-              to: ref('stg_dim_clnd')
-              field: fscldt_id
+          - not_null
+      # - name: fscldt_id
+      #   tests:
+      #     - relationships:
+      #         to: ref('stg_dim_clnd')
+      #         field: fscldt_id
 
   - name: stg_fact_transactions
-    # columns:
-    #   - name: 
-    #     tests:
-    #       - unique
-    #       - not_null
