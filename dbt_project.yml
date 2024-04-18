@@ -16,11 +16,11 @@ clean-targets:
     - "target"
     - "dbt_packages"
 
-models:
-  gsynergy_challenge:
-      staging:
-          schema: staging
-          materialized: view
-          tags: ["staging"]  
-      marts:
-          materialized: table  
+# models:
+#   gsynergy_challenge:
+#       staging:
+#           schema: staging
+#           materialized: view
+#           tags: ["staging"]  
+#       marts:
+#           materialized: table  
