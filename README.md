@@ -1,6 +1,6 @@
-# Your dbt Project Name
+# GSynergy Data Engineering Challenge
 
-Welcome to [Your dbt Project Name]! This project utilizes dbt (data build tool) to transform raw data into analytics-ready tables in your data warehouse. Below, you'll find information on how to set up and use this project effectively.
+Welcome! This project utilizes dbt (data build tool) to transform raw data into analytics-ready tables in your data warehouse. Below, you'll find information on how to set up and use this project effectively.
 
 ## Project Structure
 
